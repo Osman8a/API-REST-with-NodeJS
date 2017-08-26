@@ -1,0 +1,36 @@
+{
+  "name": "api_rest_nodejs",
+  "version": "1.0.0",
+  "description": "Functions and procedures for others Softwares",
+  "main": "server/server.js",
+  "scripts": {
+    "start": "nodemon server/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Osman8a/API-REST-with-NodeJS.git"
+  },
+  "author": "Osman Ochoa (https://osmanochoa.wordpress.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Osman8a/API-REST-with-NodeJS/issues"
+  },
+  "homepage": "https://github.com/Osman8a/API-REST-with-NodeJS#readme",
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  },
+  "dependencies": {
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "^1.17.2",
+    "crypto": "^1.0.1",
+    "express": "^4.15.4",
+    "express-handlebars": "^3.0.0",
+    "jwt-simple": "^0.5.1",
+    "moment": "^2.18.1",
+    "mongoose": "^4.11.8",
+    "nodemailer": "^4.0.1",
+    "path": "^0.12.7",
+    "swig-email-templates": "^5.0.0",
+    "validator": "^8.1.0"
+  }
+}
