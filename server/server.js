@@ -4,16 +4,23 @@
 const mongoose = require('mongoose'),
       app = require('./app'),
       config = require('./config/config');
+
+mongoose.Promise = global.Promise;
+const options = {
+          promiseLibrary: global.Promise,
+          useMongoClient: true,
+        };
 /////////////////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////CONEXION MONGO/////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////////////////
-mongoose.connect(config.db)
-    .then(() => {
-        console.log('Conexion a la base de datos establecida');
-        app.listen(config.port, () => {
-            console.log('Api REST escuchando en el puerto ' + config.port);
-        })
+  
+mongoose.connect(config.db,config.options)
+.then(() => {
+    console.log('Conexion a la base de datos establecida');
+    app.listen(config.port, () => {
+        console.log('Api REST escuchando en el puerto ' + config.port);
     })
-    .catch(err => {
-        console.log('Conexion a la base de datos establecida');
-    });
+})
+.catch(err => {
+    console.log('Conexion a la base de datos establecida');
+});

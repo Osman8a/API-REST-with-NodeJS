@@ -8,10 +8,10 @@
 
 <script type="text/javascript">
     const formLogin = document.querySelector('#login')
-    const formData  = new FormData(formLogin);  
+    const formData  = new FormData(formLogin);//todos los elementos del formulario  
 
-    formLogin.addEventListener('submit', event =>{
-        event.preventDefault()
+    formLogin.addEventListener('submit', event =>{  //escuche algun evento en el button
+        event.preventDefault() //para que no recarge la pagina
         fetch('/signin',{
             method: 'POST',
             body: formData
