@@ -18,7 +18,7 @@ mongoose.connect(config.db,config.options)
 .then(() => {
     console.log('Conexion a la base de datos establecida');
     app.listen(config.port, () => {
-        console.log('Api REST escuchando en el puerto ' + config.port);
+        console.log(`Api REST escuchando en el puerto ${config.port}`);
     })
 })
 .catch(err => {
