@@ -4,14 +4,15 @@
 const mongoose = require('mongoose'),
       app = require('./app'),
       config = require('./config/config');
+
+mongoose.Promise = global.Promise;
+const options = {
+          promiseLibrary: global.Promise,
+          useMongoClient: true,
+        };
 /////////////////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////CONEXION MONGO/////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////////////////
-mongoose.Promise = global.Promise;
-const options = {
-    promiseLibrary: global.Promise,
-    useMongoClient: true,
-  };
   
 mongoose.connect(config.db,config.options)
 .then(() => {

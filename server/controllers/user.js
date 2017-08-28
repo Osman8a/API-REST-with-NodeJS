@@ -5,7 +5,7 @@ const User = require('../models/user'),
 
 function getUser(req, res){
     User.find({},(err,user)=>{
-        Patient.populate(user, {path:"pacientes"},(err,user)=>{
+        User.populate(user, {path:"pacientes"},(err,user)=>{
           if(err) res.status(500).send({message:`Error en la peticion ${err}`})
           if(!user) return res.status(404).send({message:'user no existen'})
 

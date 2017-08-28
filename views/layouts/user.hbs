@@ -2,7 +2,7 @@
    const myHeaders = new Headers();
    myHeaders.append('authorization', `Bearer ${localStorage.token}`)
 
-   fetch('/advisors',{
+   fetch('/user',{
        method: 'GET',
        header: myHeaders
    })
