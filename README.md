@@ -3,17 +3,17 @@
 Functions and Procedures for others Softwares. These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
 ## Content of API
-- [Javascript (NodeJs)]()
-- [Framework Express]()
-- [Email Services with]()
-  - [nodemailer]()
-  - [swig-email-templates]()
-- [Token Authentication with]()
-    - [jwt-simple]()
-- [Views with]()
-  - [express-handlebars]()
-- [Data Base]()
-    - [MongoDB]()
+- [Javascript (NodeJs)](https://www.google.co.ve/search?client=ubuntu&channel=fs&q=nodejs&ie=utf-8&oe=utf-8&gfe_rd=cr&dcr=0&ei=ky3UWYLqK8bLXqOusaAL)
+- [Framework Express](http://expressjs.com/es/)
+- [Email Services with](https://yarnpkg.com/en/package/nodemailer)
+  - [nodemailer](https://nodemailer.com/about/)
+  - [swig-email-templates](https://github.com/andrewrk/swig-email-templates)
+- [Token Authentication with](https://jwt.io/)
+    - [jwt-simple](https://yarnpkg.com/en/package/jwt-simple)
+- Views with
+  - [express-handlebars](https://github.com/ericf/express-handlebars)
+- Data Base
+    - [MongoDB](https://www.mongodb.com/es)
 
 
 Prerequisites
